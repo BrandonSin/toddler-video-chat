@@ -1,0 +1,348 @@
+ /*Some Styles Used From Adrian Hajdin Java Mastery */
+ body {
+    background:
+    linear-gradient(
+      rgba(179, 203, 211, 0.424), 
+      rgba(72, 146, 111, 0.315)
+    ),
+    url(res/images/cartoonWallpaper.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.intro {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: block;
+
+
+}
+*/
+.wrapper {
+  display: grid;
+  flex-direction: column;
+  grid-template-rows: 80vh 15vh ;
+  
+}
+
+.vidWrap {
+  grid-row-start: 1;
+}
+.optionWrap {
+  grid-row-start: 2;
+}
+.hostName {
+  width: 20px;
+  margin-top: auto ;
+  margin-bottom: auto;
+  margin-left: 2rem;
+}
+
+.placeholder {
+  width: 550px;
+}
+/* Style for Video Feed */
+
+.hosting {
+  border-radius: 50%;
+  border: 2px solid #000;
+  box-shadow: 0 0 10px #000;
+  object-fit: cover;
+  width:200px;
+  height:200px;
+
+}
+
+.hosting::after {
+  content: "";
+  padding-bottom: 100%;
+  display:block;
+}
+
+.alignment {
+  text-align: center;
+}
+.userVid {
+  height: 100%;
+  width: 100%;
+  
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 10% 65% 25% 5%;
+  grid-template-rows: 20vh 60vh;
+}
+
+.hostpic {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  z-index: 2;
+}
+/* User Video Feed */
+
+.userpic {
+  grid-row-start: 2;
+  grid-column-start: 3;
+  z-index: 2;
+}
+.hosting2 {
+  border-radius: 80%;
+  border: 2px solid #000;
+  box-shadow: 0 0 10px #000;
+  object-fit: cover;
+  
+  width: 95%;
+  height: 70%;
+
+}
+
+.hosting2::after {
+  content: "";
+  padding-bottom: 100%;
+  display:block;
+}
+
+/* Playscreen container */
+
+.video-Container {
+    justify-content: center;
+}
+
+.p2Video {
+    background:
+    linear-gradient(
+      rgba(9, 187, 246, 0.904), 
+      rgba(1, 15, 9, 0.315)
+    ),
+    url("res/images/1196.jpg");
+    padding: 10px;
+    border: 2px solid black;
+    margin: 10px;
+    position: static;
+    left: auto;
+    grid-column: 1 / span 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
+}
+
+
+.root {
+    display: flex;
+    flex-direction: row;
+}
+.gridContainer {
+    width: 100%;
+    
+  }
+.container {
+    width: 600px;
+    padding: 0;
+    
+};
+.margin {
+  margin-top: 10;
+}
+.padding {
+  padding: 20;
+}
+.paper2 {
+  padding: 10px 20px;
+  border: 2px solid black;
+  color: rebeccapurple;
+}
+
+/* Grid Style from https://www.developerdrive.com/how-to-create-a-css-grid-step-by-step/ */
+.animalContainer {
+  height: 90%;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 5px 5px;
+}
+.cell {
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+.cell-1 {
+  background: limegreen;
+}
+.cell-2 {
+  background: orangered;
+}
+.cell-3 {
+  background: deepskyblue;
+}
+.cell-4 {
+  background: gold;
+}
+.cell-5 {
+  background: blueviolet;
+}
+.cell-6 {
+  background: deepskyblue;
+}
+
+/* Animal Styles */
+.pig {
+  background-image: url(res/images/pig.png);
+  
+  background-size: cover;
+  width: 85%;
+  height: 100%;
+  
+}
+
+.pig:hover {
+  background-color: rgb(246, 246, 132);
+}
+
+.pig[pigAnim='1'] {
+  animation-name: wiggle;
+  animation-duration: 200ms;
+  animation-iteration-count: 5;
+  animation-timing-function: linear; 
+}
+
+.cow {
+  background-image: url(res/images/cow.png);
+  
+  background-size: cover;
+  width: 85%;
+  height: 100%;
+  
+}
+
+.cow:hover {
+  background-color: rgb(33, 251, 51);
+}
+
+.cow[cowAnim='1'] {
+  animation-name: bounceIn;
+  animation-duration: 200ms;
+  animation-iteration-count: 5;
+  animation-timing-function: linear; 
+}
+
+
+.lion {
+  background-image: url(res/images/lionhead.png);
+  
+  background-size: cover;
+  width: 85%;
+  height: 100%;
+  
+}
+
+.lion:hover {
+  background-color: rgb(112, 103, 245);
+}
+
+.lion[lionAnim='1'] {
+  animation-name: swing;
+  animation-duration: 200ms;
+  animation-iteration-count: 5;
+  animation-timing-function: linear; 
+}
+
+.monkey {
+  background-image: url(res/images/monkey.png);
+  
+  background-size: cover;
+  width: 85%;
+  height: 100%;
+
+  
+}
+
+.monkey:hover {
+  background-color: rgb(251, 107, 208);
+}
+
+
+.monkey[monkeyAnim='1'] {
+  animation-name: spin;
+  animation-duration: 200ms;
+  animation-iteration-count: 5;
+  animation-timing-function: linear; 
+}
+
+/* Animations from TutorialPoint */
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+@keyframes spinOpp {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(-360deg);
+  }
+}
+
+@keyframes wiggle {
+  0% { transform: skewX(9deg); } 
+  10% { transform: skewX(-8deg); } 
+  20% { transform: skewX(7deg); } 
+  30% { transform: skewX(-6deg); } 
+  40% { transform: skewX(5deg); } 
+  50% { transform: skewX(-4deg); } 
+  60% { transform: skewX(3deg); } 
+  70% { transform: skewX(-2deg); } 
+  80% { transform: skewX(1deg); } 
+  90% { transform: skewX(0deg); } 
+  100% { transform: skewX(0deg); } 
+}
+
+@keyframes bounceIn {
+  0% { 
+     opacity: 0; 
+     transform: scale(.3);
+  }
+  50% { 
+     opacity: 1;
+     transform: scale(1.05);
+  }
+  70% {
+     transform: scale(.9);
+  }
+  100% {
+     transform: scale(1);
+  }
+}
+
+@keyframes swing {
+  20% { transform: rotate(15deg); } 
+  40% { transform: rotate(-10deg); } 
+  60% { transform: rotate(5deg); } 
+  80% { transform: rotate(-5deg); } 
+  100% { transform: rotate(0deg); } 
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .video {width: 80%;}
+  .video-Container{flex-direction: column;}
+  .gridContainer {flex-direction: column;}
+  .container {width: 80%;}
+  .hosting {width: 100px; height: 100px;}
+}
+
+
